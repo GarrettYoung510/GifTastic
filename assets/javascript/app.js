@@ -6,7 +6,7 @@ $(document).ready(function() {
     // to make sure file linked correctly
 });
 
-var searchArray = ['Dog', 'Cat', 'Bird'];
+var searchArray = ['Paradise', 'Dog', 'Cat', ];
 // hold search array
 
 function populateButtons(searchArray, classToAdd, areaToAddTo) {

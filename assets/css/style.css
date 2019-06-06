@@ -4,3 +4,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#title,
+#instructions {
+    font-family: 'VT323', monospace;
+}
