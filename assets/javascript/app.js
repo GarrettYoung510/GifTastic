@@ -36,7 +36,7 @@ $(document).on('click', '.searchButton', function() {
     let type = $(this).data('type');
     // type variable is what is added to the query URL
 
-    var queryURL = 'http://api.giphy.com/v1/gifs/search?q=' + type + '&api_key=qHgOU9615rzWjh2qQUJgd3LeJXGn9Ugo&limit=10';
+    var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + type + '&api_key=qHgOU9615rzWjh2qQUJgd3LeJXGn9Ugo&limit=10';
     // api url with key from giphy.com
 
     $.ajax({
