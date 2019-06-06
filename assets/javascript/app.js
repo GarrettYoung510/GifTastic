@@ -15,7 +15,7 @@ function populateButtons(searchArray, classToAdd, areaToAddTo) {
     // first empty out area to add to
     for (var i = 0; i < searchArray.length; i++) {
         // loops through searchArray
-        var a = $('<button>');
+        var a = $('<button class="btn btn-info m-2">');
         // creates a variable a button
         a.addClass(classToAdd);
         // adds the class to add that is defined above
