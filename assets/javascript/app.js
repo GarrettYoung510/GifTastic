@@ -6,7 +6,7 @@ $(document).ready(function() {
     // to make sure file linked correctly
 });
 
-var searchArray = ['Paradise', 'Dog', 'Cat', ];
+var searchArray = ['Fish', 'Dog', 'Cat', ];
 // hold search array
 
 function populateButtons(searchArray, classToAdd, areaToAddTo) {
@@ -49,7 +49,7 @@ $(document).on('click', '.searchButton', function() {
         // .then promise after query works
         for (var i = 0; i < response.data.length; i++) {
             // for loop to go through the responses
-            var searchDiv = $('<div class="search-item">');
+            var searchDiv = $('<div class="search-item ml-2">');
             // create a div for each search item
             var rating = response.data[i].rating;
             // for the rating
@@ -59,7 +59,7 @@ $(document).on('click', '.searchButton', function() {
             // animated 
             var still = response.data[i].images.fixed_height_still.url;
             // still
-            var image = $('<img>');
+            var image = $('<img class="ml-2">');
             // create img var
             image.attr('src', still);
             // set attribute for src 
