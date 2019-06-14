@@ -16,7 +16,7 @@ Your favorite browser (Google Chrome preferrably)
 ## Built With
 
 * [Visual Studio](https://visualstudio.microsoft.com/) - The text editor used
-* Giphy API - API to pull gifs
+* [Giphy API](https://developers.giphy.com/) - API to pull gifs
 
 ## Authors
 
