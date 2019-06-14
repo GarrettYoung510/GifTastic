@@ -1,7 +1,7 @@
 # GifTastic
 https://garrettyoung510.github.io/GifTastic/
 
-
+![Picture of the game](https://i.lensdump.com/i/WYlWkc.png)
 
 Create your own Gif Paradise with buttons for your searches!
 
