@@ -2,11 +2,11 @@ $(document).ready(function() {
     // after html loads run this function
     populateButtons(searchArray, 'searchButton', '#buttonsArea');
     // populate buttons function using search array, the search button class to add, and buttons area is where to add to
-    console.log("LINKED!!");
+    // console.log("LINKED!!");
     // to make sure file linked correctly
 });
 
-var searchArray = ['Fish', 'Dog', 'Cat', ];
+var searchArray = ['food', 'dog', 'dwayne', ];
 // hold search array
 
 function populateButtons(searchArray, classToAdd, areaToAddTo) {
@@ -36,7 +36,10 @@ $(document).on('click', '.searchButton', function() {
     let type = $(this).data('type');
     // type variable is what is added to the query URL
 
-    var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + type + '&api_key=qHgOU9615rzWjh2qQUJgd3LeJXGn9Ugo&limit=10';
+    var apikey = '4ls8TZiUFRiUhJxPs3l3ZyZu4Vi3d5nH';
+    // just in case user wants to input their own api key
+
+    var queryURL = `https://api.giphy.com/v1/gifs/search?q=${type}&api_key=${apikey}&limit=10`;
     // api url with key from giphy.com
 
     $.ajax({
@@ -97,7 +100,7 @@ $(document).on('click', '.searchImage', function() {
 })
 
 $('#submit').on('click', function() {
-    const newSearch = $('#search-input').val().trim();
+    const newSearch = $('#search-input').val().trim().toLowerCase();
     // input type text and input type submit, it would go for submit if we did not put eq
     searchArray.push(newSearch);
     // add to the searcharray
