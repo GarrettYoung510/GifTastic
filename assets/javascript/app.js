@@ -41,6 +41,7 @@ $(document).on('click', '.searchButton', function() {
 
     var queryURL = `https://api.giphy.com/v1/gifs/search?q=${type}&api_key=${apikey}&limit=15`;
     // api url with key from giphy.com
+    // may need to change api key or limit from time to time due to giphy api updates (gave no access control error before)
 
     $.ajax({
         // set up ajax request
