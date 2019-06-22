@@ -39,7 +39,7 @@ $(document).on('click', '.searchButton', function() {
     var apikey = '4ls8TZiUFRiUhJxPs3l3ZyZu4Vi3d5nH';
     // just in case user wants to input their own api key
 
-    var queryURL = `https://api.giphy.com/v1/gifs/search?q=${type}&api_key=${apikey}&limit=10`;
+    var queryURL = `https://api.giphy.com/v1/gifs/search?q=${type}&api_key=${apikey}&limit=15`;
     // api url with key from giphy.com
 
     $.ajax({
